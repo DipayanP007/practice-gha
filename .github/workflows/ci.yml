@@ -28,6 +28,8 @@ jobs:
             npm run build
     
   deploy:
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v2
     - name: Deploy to pages
       uses: JamesIves/github-pages-deploy-action@4.1.7
