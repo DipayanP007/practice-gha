@@ -26,6 +26,9 @@ jobs:
       run: | 
             npm ci
             npm run build
+    
+  deploy:
+    - uses: actions/checkout@v2
     - name: Deploy to pages
       uses: JamesIves/github-pages-deploy-action@4.1.7
       with:
